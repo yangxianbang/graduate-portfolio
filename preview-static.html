@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>杨宪邦 | 静态预览</title>
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body>
+    <section class="hero" id="hero">
+      <video class="hero-video" autoplay muted loop playsinline poster="public/hero-poster.svg">
+        <source src="public/hero-background.mp4" type="video/mp4" />
+      </video>
+      <div class="hero-overlay"></div>
+      <header class="nav-shell">
+        <a class="brand" href="#hero" aria-label="返回首页">
+          <span class="brand-mark">Y</span>
+          <span>Yang Xianbang</span>
+        </a>
+        <nav aria-label="主导航">
+          <a href="#profile">经历</a>
+          <a href="#projects">项目</a>
+          <a href="#strengths">优势</a>
+          <a href="#contact">联系</a>
+        </nav>
+        <a class="nav-contact" href="mailto:19818870916@163.com">
+          <span class="mini-mark">MAIL</span>
+          联系我
+        </a>
+      </header>
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow">Graduate Portfolio · UAV Control · Low-altitude Technology</p>
+          <h1>杨宪邦<span>把无人机算法带到真实飞行平台的研究生工程实践者</span></h1>
+          <p class="hero-subtitle">
+            低空技术与工程硕士在读，方向覆盖固定翼控制算法、太阳能无人机、路径规划与航电系统集成。
+          </p>
+          <div class="hero-actions">
+            <a class="primary-button" href="#projects">查看项目 <span aria-hidden="true">-&gt;</span></a>
+            <a class="ghost-button" href="mailto:19818870916@163.com">
+              <span class="mini-mark">MAIL</span>
+              发送邮件
+            </a>
+          </div>
+        </div>
+        <aside class="hero-panel" aria-label="核心信息">
+          <div>
+            <span class="panel-label">Current</span>
+            <strong>大连理工大学 · 硕士</strong>
+          </div>
+          <div>
+            <span class="panel-label">Focus</span>
+            <strong>低空技术 / 控制算法 / UAV Engineering</strong>
+          </div>
+          <div class="metric-row">
+            <span><strong>1/63</strong>本科专业排名</span>
+            <span><strong>EI</strong>会议论文</span>
+            <span><strong>CN</strong>发明专利</span>
+          </div>
+        </aside>
+      </div>
+      <div class="scroll-cue">Scroll</div>
+    </section>
+
+    <main>
+      <section class="section profile-section" id="profile">
+        <div class="section-heading">
+          <p class="eyebrow">Profile</p>
+          <h2>个人经历</h2>
+        </div>
+        <div class="profile-layout">
+          <div class="avatar-card">
+            <div class="avatar-frame"><img class="avatar-photo" src="public/avatar.jpg" alt="杨宪邦头像" /></div>
+            <h3>杨宪邦</h3>
+            <p>算法工程师 / 硬件工程师方向</p>
+            <div class="contact-list">
+              <a href="tel:19818870916"><span class="mini-mark">TEL</span><span>19818870916</span></a>
+              <a href="mailto:19818870916@163.com"><span class="mini-mark">MAIL</span><span>19818870916@163.com</span></a>
+              <a href="#contact"><span class="mini-mark">LOC</span><span>深圳 / 北京 / 长三角</span></a>
+            </div>
+          </div>
+          <div class="profile-copy">
+            <p>
+              我是一名低空技术与工程方向研究生，本科毕业于沈阳航空航天大学飞行器设计与工程专业，并以专业第一推免至大连理工大学。
+              我的项目经历横跨无人机控制算法、航电系统集成、太阳能长航时平台、路径规划和机械执行机构。
+            </p>
+            <p>
+              我更关注“算法是否能在真实平台稳定工作”。从 C++/MATLAB/PX4 到传感器校准、结构优化与试飞，我希望把研究中的模型、控制律和规划算法转化为可验证、可交付的工程能力。
+            </p>
+            <div class="education-grid">
+              <div class="education-item"><span class="mini-mark">EDU</span><span>大连理工大学 · 硕士 · 低空技术与工程（推免）</span></div>
+              <div class="education-item"><span class="mini-mark">EDU</span><span>沈阳航空航天大学 · 本科 · 飞行器设计与工程</span></div>
+              <div class="education-item"><span class="mini-mark">EDU</span><span>本科专业成绩排名 1/63，综合成绩排名 1/63</span></div>
+              <div class="education-item"><span class="mini-mark">EDU</span><span>辽宁省政府奖学金，连续五次校综合一等奖学金</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="projects">
+        <div class="section-heading wide-heading">
+          <div>
+            <p class="eyebrow">Selected Work</p>
+            <h2>精选项目</h2>
+          </div>
+          <p>用大卡片呈现能力边界：控制算法、飞行平台、工程调试、智能规划和论文/专利成果。</p>
+        </div>
+        <div class="project-grid">
+          <article class="project-card">
+            <div class="project-index">01</div>
+            <p class="project-kicker">负责人 · 控制算法验证</p>
+            <h3>中型固定翼飞机先进控制算法验证</h3>
+            <p>在真实中型固定翼平台上验证先进控制算法的可行性与稳定性，覆盖航电安装、传感器集成校准、控制系统代码编写和试飞测试。</p>
+            <div class="chip-row"><span>C++</span><span>MATLAB</span><span>PX4</span><span>传感器校准</span><span>闭环试飞</span></div>
+            <div class="project-impact"><span class="mini-mark">FLOW</span><span>将算法从仿真推进到飞行平台，关注响应效率、控制精度与实际飞行环境稳定性。</span></div>
+          </article>
+          <article class="project-card">
+            <div class="project-index">02</div>
+            <p class="project-kicker">工程师 · 低空物流平台</p>
+            <h3>垂直起降长航时太阳能固定翼物流无人机</h3>
+            <p>参与固定翼与多旋翼结合的无人机方案，使用增程式动力系统与柔性太阳能电池一体化蒙皮技术，负责气动分析和参数调控。</p>
+            <div class="chip-row"><span>XFLR5</span><span>MATLAB</span><span>气动分析</span><span>轻量化</span><span>VTOL</span></div>
+            <div class="project-impact"><span class="mini-mark">FLOW</span><span>在设计方案、气动优化与工程调参之间建立闭环，服务长航时物流无人机任务需求。</span></div>
+          </article>
+          <article class="project-card">
+            <div class="project-index">03</div>
+            <p class="project-kicker">负责人 · 从 0 到 1</p>
+            <h3>太阳能远距非常规鸭翼布局飞机</h3>
+            <p>从比赛要求出发设计太阳能驱动、非常规鸭翼布局、高载重比、高制空时长飞机，负责机翼抗扭、整体分析、结构优化与试飞。</p>
+            <div class="chip-row"><span>总体设计</span><span>结构优化</span><span>抗扭设计</span><span>试飞</span><span>太阳能飞机</span></div>
+            <div class="project-impact"><span class="mini-mark">FLOW</span><span>独立推进小型太阳能无人机从方案设计到制造试飞，形成完整工程落地能力。</span></div>
+          </article>
+          <article class="project-card">
+            <div class="project-index">04</div>
+            <p class="project-kicker">负责人 · 智能路径规划</p>
+            <h3>基于灰狼算法的多无人机路径规划</h3>
+            <p>采用变长度编码表达多无人机协同轨迹，改进 GWO 搜索效率，并通过非线性更新因子平衡快速寻优与深度挖掘。</p>
+            <div class="chip-row"><span>GWO</span><span>路径规划</span><span>协同飞行</span><span>建模仿真</span><span>EI 会议</span></div>
+            <div class="project-impact"><span class="mini-mark">FLOW</span><span>论文发表于 2024 IEEE ICCECT，聚焦智能配送任务下的算法适配与工程约束。</span></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section strength-section" id="strengths">
+        <div class="section-heading">
+          <p class="eyebrow">Capabilities</p>
+          <h2>个人优势</h2>
+        </div>
+        <div class="strength-grid">
+          <article class="strength-card"><div class="icon-box"><span>FLY</span></div><h3>从设计到试飞的闭环能力</h3><p>具备航空器总体设计、结构优化、航电调试、控制部署和试飞验证经验，能把想法推到真实平台。</p></article>
+          <article class="strength-card"><div class="icon-box"><span>SYS</span></div><h3>算法与硬件双栈理解</h3><p>熟悉无人机控制算法、路径规划、PX4 飞控系统，同时参与过传感器集成、航电安装与电磁驱动装置研发。</p></article>
+          <article class="strength-card"><div class="icon-box"><span>LOW</span></div><h3>低空技术问题意识</h3><p>研究方向聚焦低空技术与工程，项目覆盖物流无人机、太阳能长航时平台和多机协同规划。</p></article>
+          <article class="strength-card"><div class="icon-box"><span>AI</span></div><h3>快速学习与 AI 工具使用</h3><p>熟练运用大模型工具辅助学习、调研与工程实践，持续关注前沿技术并尝试落地。</p></article>
+        </div>
+      </section>
+
+      <section class="contact-section" id="contact">
+        <div class="contact-inner">
+          <div class="contact-title">
+            <p class="eyebrow">Contact</p>
+            <h2>期待进入真实系统，把低空技术做成可飞、可靠、可验证的工程结果。</h2>
+          </div>
+          <div class="contact-cards">
+            <a href="tel:19818870916" class="contact-card"><span class="mini-mark">TEL</span><span>电话</span><strong>19818870916</strong></a>
+            <a href="mailto:19818870916@163.com" class="contact-card"><span class="mini-mark">MAIL</span><span>邮箱</span><strong>19818870916@163.com</strong></a>
+            <a href="#projects" class="contact-card"><span class="mini-mark">ROLE</span><span>意向</span><strong>算法工程师 / 硬件工程师</strong></a>
+          </div>
+          <div class="footer-line">
+            <span>Yang Xianbang Portfolio</span>
+            <span>Low-altitude Technology · UAV Control · Aerospace Engineering</span>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
